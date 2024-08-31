@@ -1,0 +1,10 @@
+name: "Conflict Merker Detector"
+description: "Detect if any conflict markers remain in the diff of the Pull Request."
+
+runs:
+  using: "composite"
+  steps:
+    - name: Detect conflict markers
+      shell: pwsh
+      run: |
+        $env:GITHUB_ACTION_PATH\DetectConflictMarkers.ps1
