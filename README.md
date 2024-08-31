@@ -1,0 +1,1 @@
+# conflict-marker-detector
