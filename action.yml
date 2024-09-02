@@ -6,4 +6,5 @@ runs:
   steps:
     - name: Detect conflict markers
       shell: pwsh
-      run: $env:GITHUB_ACTION_PATH\DetectConflictMarker.ps1
+      run: |
+        $env:GITHUB_ACTION_PATH/DetectConflictMarker.ps1
