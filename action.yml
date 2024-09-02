@@ -8,4 +8,4 @@ runs:
       shell: pwsh
       run: |
         $env:GITHUB_ACTION_PATH
-        "$env:GITHUB_ACTION_PATH"/main.ps1
+        "$env:GITHUB_ACTION_PATH"\main.ps1
