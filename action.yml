@@ -7,4 +7,5 @@ runs:
     - name: Detect conflict markers
       shell: pwsh
       run: |
-        ./main.ps1
+        $env:GITHUB_ACTION_PATH
+        "$env:GITHUB_ACTION_PATH"/main.ps1
