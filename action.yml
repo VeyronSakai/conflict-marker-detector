@@ -7,4 +7,4 @@ runs:
     - name: Detect conflict markers
       shell: pwsh
       run: |
-        Write-Output "$env:GITHUB_ACTION_PATH"
+        ls $env:GITHUB_ACTION_PATH
